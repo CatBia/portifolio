@@ -1,0 +1,9 @@
+version: "3"
+services:
+  main-portifolio:
+    image: "node:alpine"
+    volumes:
+      - ./code:/usr/bin/app
+    command: tail -f /dev/null
+    ports:
+      - "3000:3000"
